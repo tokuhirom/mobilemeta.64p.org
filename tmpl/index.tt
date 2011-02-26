@@ -1,5 +1,17 @@
 [% WRAPPER 'include/layout.tt' WITH title="ガラケーの情報をJSONで提供するよ" %]
 
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9032322815824634";
+/* mobilemeta */
+google_ad_slot = "5280295291";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
 <table>
     <tr>
         <th>名称</th>
@@ -27,6 +39,18 @@
     </tr>
 [% END %]
 </table>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9032322815824634";
+/* mobilemeta */
+google_ad_slot = "5280295291";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
 
 <hr />
 
