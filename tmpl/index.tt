@@ -2,13 +2,28 @@
 
 <table>
     <tr>
+        <th>名称</th>
         <th>ファイル</th>
         <th>最終更新日</th>
+        <th>コード</th>
+        <th>取得元</th>
     </tr>
 [% FOR v IN entries %]
     <tr>
+        <td>[% v.name %]</td>
         <td><a href="/dat/[% v.basename %]">[% v.basename %]</a></td>
         <td>[% v.mtime %]</td>
+        <td>
+            <a href="http://frepan.org/perldoc?[% v.module %]">Perl</a>
+        </td>
+        <td class="source_url">
+                <ul>
+                [% FOR q IN v.urls %]
+                    <li><a href="[% q %]">[[% loop.count %]]</a></li>
+                [% END %]
+                </ul>
+            </div>
+        </td>
     </tr>
 [% END %]
 </table>
@@ -17,8 +32,8 @@
 
 <div class="note">
     <p>一日一回更新しています</p>
-    <p>スクレイピングによって生成されるデータのみを使用しているので、データの照合が容易です</p>
-    <p>フォーマットなどは予告なく変更されることがあります。変更履歴はこちらでみることができます。</p>
+    <p>WWW::MobileCarrierJP というモジュールにより<B>スクレイピング</B>しています。スクレイピングによって生成されるデータのみを使用しているので、データの照合が容易です</p>
+    <p>できるだけ変わらないようにしていますが、キャリヤ側の変更により、フォーマットなどが予告なく変更されることがあります。変更履歴はこちらでみることができます。</p>
     <p>ソースはこちら(TODO)</p>
 </div>
 

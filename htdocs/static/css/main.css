@@ -43,6 +43,21 @@ table {
     border-spacing: 0;
 }
 
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden; 
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
 /* --------------------------------------------------------------
 
    typography.css
@@ -194,6 +209,14 @@ body > header {
 
 #main {
     padding: 10px;
+}
+#main .source_url ul {
+    list-style: none;
+    padding-left: 0;
+}
+#main .source_url ul li {
+    float: left;
+    margin-right: 0.5em;
 }
 
 body > footer {
