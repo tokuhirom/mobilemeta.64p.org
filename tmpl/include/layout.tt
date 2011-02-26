@@ -20,7 +20,7 @@
         [% content %]
     </div>
     <footer>
-        Powered by <a href="http://amon.64p.org/">Amon2</a>
+        Powered by <a href="http://amon.64p.org/">Amon2</a>, <a href="http://64p.org/">tokuhirom</a>
     </footer>
 </body>
 </html>

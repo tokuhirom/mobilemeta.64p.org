@@ -60,4 +60,18 @@ any '/' => sub {
     $c->render('index.tt', {entries => \@entries});
 };
 
+any '/dat/*.json' => sub {
+    my ($c) = @_;
+    my $fname = $c->req->path_info;
+    open my $fh, '<', File::Spec->catfile($c->base_dir(), $fname);
+    return $c->create_response(
+        200,
+        [
+            'Content-Length' => -s $fh,
+            'Content-Type'   => 'application/json; charset=utf-8'
+        ],
+        $fh
+    );
+};
+
 1;

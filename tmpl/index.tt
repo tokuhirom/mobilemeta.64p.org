@@ -58,7 +58,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     <p>一日一回更新しています</p>
     <p>WWW::MobileCarrierJP というモジュールにより<B>スクレイピング</B>しています。スクレイピングによって生成されるデータのみを使用しているので、データの照合が容易です</p>
     <p>できるだけ変わらないようにしていますが、キャリヤ側の変更により、フォーマットなどが予告なく変更されることがあります。変更履歴はこちらでみることができます。</p>
-    <p>ソースはこちら(TODO)</p>
+    <p>サイトのソースは<a href="https://github.com/tokuhirom/mobilemeta.64p.org">こちら</a>。スクレーパーのソースは<a href="https://github.com/tokuhirom/www-mobilecarrierjp">こちら</a></p>
 </div>
 
 [% END %]
